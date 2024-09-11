@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Living Blog</title>
+    
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header col-12">
+            <h1>Healthy Living Blog</h1>
+        </div>
+
+        <button class="menu-button" onclick="toggleSidebar()">☰ Menu</button>
+
+        <div class="row">
+            <div id="sidebar" class="navigation col-3 col-s-3 col-l-3">
+                <p><strong>Navigation</strong></p>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="wrapper col-6 col-s-9 col-l-6">
+                <div class="content">
+                    <h2>Top 5 Tips for a Healthy Lifestyle</h2>
+                    <p>Living a healthy lifestyle doesn't have to be hard. Here are five simple tips to help you get started:</p>
+                    <ol>
+                        <li><strong>Eat a Balanced Diet:</strong> Incorporate plenty of fruits, vegetables, whole grains, and lean proteins into your diet. Avoid processed foods and sugary drinks.</li>
+                        <li><strong>Stay Hydrated:</strong> Drink plenty of water throughout the day. It helps with digestion, keeps your skin healthy, and aids in overall body function.</li>
+                        <li><strong>Exercise Regularly:</strong> Aim for at least 30 minutes of moderate exercise most days of the week. This could be anything from walking, jogging, or yoga.</li>
+                        <li><strong>Get Enough Sleep:</strong> Ensure you are getting 7-9 hours of sleep each night. Quality sleep is crucial for physical and mental health.</                        </li>
+                        <li><strong>Manage Stress:</strong> Practice mindfulness, meditation, or other relaxation techniques to manage stress effectively.</li>
+                    </ol>
+                    <p>By following these tips, you can improve your overall health and well-being. Remember, small changes can make a big difference over time!</p>
+                </div>
+            </div>
+
+            <div class="extra col-3 col-s-12 col-l-3">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">10 Superfoods for a Healthier Diet</a></li>
+                    <li><a href="#">How to Stay Active During Winter</a></li>
+                    <li><a href="#">The Importance of Mental Health</a></li>
+                    <li><a href="#">Simple Yoga Poses for Beginners</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer col-12">
+            <p>&copy; 2024 Healthy Living Blog - All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
